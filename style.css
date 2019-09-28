@@ -21,6 +21,47 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+/*
+@media only screen and (min-width: 768px)
+.site-title {
+    display: inline;
+}
+*/
+
+
+.site-header {
+    margin: 0;
+    padding: 3rem 0;
+    background: #b5abab;
+}
+
+/* Branding */
+.site-title {
+	/*display: none;*/
+	font-size: 2rem;
+}
+.site-title a {
+    color: #714a4a;
+    text-shadow: -1px -1px 2px #000,
+    				1px 1px 2px #fff;
+}
+.site-title a:visited {
+    color: #714a4a;
+    text-shadow: -1px -1px 2px #000, 
+    				1px 1px 2px #fff;
+}
+
+.site-description {
+	/*display: none;*/
+	color: #fff;
+}
+/*
+.site-logo{
+	right: calc(100% + (1.25 * 1rem));
+}
+*/
+
+
 .entry .entry-header{
 	margin: 0px;
 	max-width: 100%;
