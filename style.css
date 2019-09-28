@@ -41,6 +41,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	margin: 0px;
 }
 
+/* images */
+img {
+	width: 100%;
+	margin: 0 auto;
+}
+
 /* powered by Wordpress */
 .imprint{
 	font-size: 0.8em;
