@@ -18,14 +18,22 @@
 	<footer id="colophon" class="site-footer">
 		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
 		<div class="site-info">
+			
+			<!--
 			<?php $blog_info = get_bloginfo( 'name' ); ?>
 			<?php if ( ! empty( $blog_info ) ) : ?>
 				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
 			<?php endif; ?>
+			
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentynineteen' ) ); ?>" class="imprint">
+			-->
+			<!-- TODO: remove the above lines completely form code. -->
+
+			<a href="<?php echo esc_url( __( 'https://saumya.github.io/', 'twentynineteen' ) ); ?>" class="imprint">
 				<?php
 				/* translators: %s: WordPress. */
-				printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
+				//printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
+				printf( __( 'Running on %s.', 'twentynineteen' ), 'Saumya PhotoBlog' );
 				?>
 			</a>
 			<?php
