@@ -38,7 +38,7 @@
 				<?php
 				/* translators: %s: WordPress. */
 				//printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
-				printf( __( 'Theme %s.', 'twentynineteen' ), 'Saumya PhotoBlog' );
+				printf( __( 'Theme %s.', 'twentynineteen' ), 'Saumya | PhotoBlog' );
 				?>
 			</a>
 			<?php
