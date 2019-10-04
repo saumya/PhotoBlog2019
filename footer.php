@@ -34,11 +34,11 @@
 			-->
 			<!-- TODO: remove the above lines completely form code. -->
 
-			<a href="<?php echo esc_url( __( 'https://saumya.github.io/', 'twentynineteen' ) ); ?>" class="imprint">
+			<a href="<?php echo esc_url( __( 'https://github.com/saumya/PhotoBlog2019', 'twentynineteen' ) ); ?>" class="imprint">
 				<?php
 				/* translators: %s: WordPress. */
 				//printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
-				printf( __( 'Theme %s.', 'twentynineteen' ), 'Saumya | PhotoBlog' );
+				printf( __( 'Theme %s.', 'twentynineteen' ), 'PhotoBlog2019' );
 				?>
 			</a>
 			<?php
