@@ -1,6 +1,6 @@
 <?php
 /**
- * Saumya Theme functions and definitions
+ * PhotoBlog2019 Theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
