@@ -61,6 +61,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 */
 
+/* hidding the "---" mark before all the titles */
+.entry .entry-title:before {
+	display: none;
+}
+
+
 
 .entry .entry-header{
 	margin: 0px;
