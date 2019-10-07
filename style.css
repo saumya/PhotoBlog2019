@@ -61,12 +61,37 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 */
 
+
 /* hidding the "---" mark before all the titles */
+/*
 .entry .entry-title:before {
 	display: none;
 }
+*/
+.entry .entry-title:before {
+    background: #767676;
+    /*content: "\020";*/
+    display: none;
+    height: 20px;
+    /*margin: 1rem 0;*/
+    /*width: 1em;*/
+}
+
+/* Removing the margin from the content */
+.entry .entry-content > *, .entry .entry-summary > * {
+	margin: 0px 0px;
+}
+
+/* Removes top margin bewteen the posts */
+.entry {
+    margin-top: calc(1 * 1rem);
+}
 
 
+.entry .entry-title {
+    margin: 0;
+    text-align: center;
+}
 
 .entry .entry-header{
 	margin: 0px;
@@ -76,6 +101,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	max-width: 100%;
 	margin: 0px 0px;
 	padding: 0px 0px;
+	text-align: left;
 }
 .entry .entry-content > *, .entry .entry-summary > * {
 	max-width: 100%;
@@ -83,10 +109,74 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .entry .entry-footer{
 	margin: 0px;
 	max-width: 100%;
+	text-align: center;
 }
 .hfeed .entry .entry-header{
 	margin: 0px;
 }
+
+.entry .entry-meta {
+    margin: 0rem 0;
+    text-align: center;
+}
+
+/* ========================================================================== */
+/* Next-Back: Navigation - Start */
+/* Next/Back Navigation in a single post */
+.post-navigation .nav-links {
+	/*
+	margin: 0 1rem;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	*/
+	/*max-width: calc(6 * (100vw / 12) - 28px);*/
+	max-width: 100%;
+	margin: 0 0;
+}
+.post-navigation {
+    /* margin: calc(3 * 1rem) 0; */
+    margin: 0 0;
+    font-size: 0.8em;
+    display: none; /* Removed from the UI */
+}
+.post-navigation .nav-links .nav-next {
+    /*min-width: calc(50% - 2 * 1rem);*/
+    margin-bottom: 0rem;
+}
+.post-navigation .nav-links .nav-previous {
+    /*min-width: calc(50% - 2 * 1rem);*/
+}
+.post-navigation .nav-links .nav-previous + .nav-next {
+    /*margin-bottom: 1rem;*/
+    margin-bottom: 0rem;
+}
+
+@media only screen and (min-width: 1168px) {
+  .post-navigation .nav-links .nav-previous,
+  .post-navigation .nav-links .nav-next {
+    /* min-width: calc(50% - 2 * 1rem); */
+    min-width: 0px;
+    margin: 0 auto;
+  }
+}
+
+.post-navigation .nav-links a .post-title {
+    hyphens: auto;
+    display: none;
+}
+
+/* Next/Back : Removing the '--' from the text */
+.post-navigation .nav-links a .meta-nav:before, .post-navigation .nav-links a .meta-nav:after {
+    display: none;
+    content: "...";
+    width: 2em;
+    color: #767676;
+    height: 1em;
+}
+
+/* Next-Back: Navigation - End */
+/* ========================================================================== */
 
 /* images */
 img {
